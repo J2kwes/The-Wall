@@ -1,0 +1,169 @@
+@font-face {
+  font-family: customFont;
+  src: url("font/MrsSheppards-Regular.ttf");
+}
+
+@font-face {
+  font-family: customStyle;
+  src: url("font/KaushanScript-Regular.ttf");
+}
+
+body {
+  font: 1em/1.67 'Open Sans', Arial, Sans-serif;
+  margin: 0;
+  background-image: url("fotos/IMG_20170812_122400.jpg");
+  background-size: cover,contain;
+  background-repeat: no-repeat;
+}
+
+td{
+  padding: 10px;
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  background-color: black;
+  box-shadow: 0 5px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+header h1 {
+  display: inline-block;
+  font-family: customFont;
+  color: #eff9ff;
+  font-size: 63px;
+  margin-top: -0.1em;
+}
+
+.fileContainer{
+  background-color: #f1f1f1;
+  border-width: 10px;
+  border-style: dashed;
+  border-color: #bbbbbb;
+  height: 300px;
+  text-align: center;
+}
+
+
+.navbar {
+  height: 1.8em;
+  width: 100%;
+  background-color: #d8d0d0;
+  font-size: 20px;
+}
+
+.navbar p{
+  margin-top: 0px;
+  color: black;
+  font-family: customStyle;
+}
+
+i {
+  float: right;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+}
+
+#userIcon {
+  margin-right: 0.22em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: lightgrey;
+}
+
+form {
+  border: 3px solid #fff;
+  margin: 3em 30em;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Full-width inputs */
+
+input[type=text], input[type=password], input[type=email], textarea {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 10px;
+  display: inline-block;
+  border: 2px solid;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+textarea{
+  resize: vertical;
+}
+
+/* Set a style for all buttons */
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 2.5em auto;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+
+}
+
+/* Add a hover effect for buttons */
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: black;
+  margin: 8px auto;
+}
+
+/* Add padding to containers */
+
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media only screen and (min-width: 100px) {
+  form {
+    border: 3px solid #fff;
+    margin: 3em 2em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  form {
+    border: 3px solid #fff;
+    margin: 3em 17em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  form {
+    border: 3px solid #fff;
+    margin: 3em 30em;
+  }
+}

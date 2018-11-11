@@ -1,0 +1,250 @@
+@font-face {
+  font-family: customFont;
+  src: url("font/MrsSheppards-Regular.ttf");
+}
+
+@font-face {
+  font-family: customStyle;
+  src: url("font/KaushanScript-Regular.ttf");
+}
+
+
+body {
+  font: 1em/1.67 'Open Sans', Arial, Sans-serif;
+  margin: 0;
+  background-color: #f1f1f1;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  height: 5em;
+  background-color: black;
+  box-shadow: 0 5px;
+  text-align: center;
+}
+
+header h1 {
+  display: inline-block;
+  font-family: customFont;
+  color: #eff9ff;
+  font-size: 63px;
+  margin-top: -0.1em;
+}
+
+.navbar {
+  height: 1.8em;
+  width: 100%;
+  background-color: #d8d0d0;
+  font-size: 20px;
+}
+
+.navbar p{
+  margin-top: 0px;
+  color: black;
+  font-family: customStyle;
+}
+
+.navbar input {
+  margin-left: 0.22em;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 14em;
+}
+
+i {
+  float: right;
+  margin-top: 0.3em;
+  margin-left: 0.5em;
+  color: black;
+}
+
+#userIcon {
+  margin-right: 0.22em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#home{
+  height: 20px;
+  width: 100px;
+}
+
+a:hover {
+
+  color: white;
+}
+
+.masonry {
+  margin: 1.5em 0.75em;
+  padding: 0;
+  font-size: .85em;
+}
+
+.item {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-bottom: 0.6em;
+}
+
+.item img {
+  width: inherit;
+}
+
+p {
+  color: #fff;
+}
+
+/* Style the Image Used to Trigger the Modal */
+
+
+.images {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.images:hover {
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 100px) {
+  .masonry {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    margin: 1.5em 0;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .masonry {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin: 1.5em 0.75em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+  .modal-content {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .masonry {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .masonry {
+    -moz-column-count: 5;
+    -webkit-column-count: 5;
+    column-count: 5;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    width: 1260px;
+  }
+}
